@@ -44,6 +44,12 @@
 
         toggleMapDist = () => {
             DOM.overlay.classList.toggle('active');
+
+            if(DOM.overlay.classList.contains('active')) {
+                DOM.mapBtn.innerHTML = 'Ver mapa';
+            } else {
+                DOM.mapBtn.innerHTML = 'Ver distribuicao';
+            }
         },
 
         setOverlayPos = boundingRect => {
