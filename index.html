@@ -7,9 +7,10 @@
     <title>ROAZ</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body id="#body">
     
     <header class="header">
         <div class="inner-wrapper inner-wrapper--header">
@@ -18,15 +19,9 @@
                 <span>OAZ</span>
             </a>
             <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#taxonomy" class="nav__link">Taxonomia</a>
-                    </li>
+                <!-- <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#biology" class="nav__link active">Biologia</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#morphology" class="nav__link">Morfologia</a>
                     </li>
                     <li class="nav__item">
                         <a href="#conservation" class="nav__link">Conservacao</a>
@@ -34,7 +29,7 @@
                     <li class="nav__item">
                         <a href="#" class="nav__link">Bibliografia</a>
                     </li>
-                </ul>
+                </ul> -->
             </nav>            
         </div>
 
@@ -43,29 +38,28 @@
         <div class="inner-wrapper">
             <!-- Section Hero -->
             <section class="section section--hero hero">
-                <div class="hero__bg"></div>
-                <p class="hero__scientificName"><i>Tursiops truncatus</i> Montagu, 1821</p>
+                <div class="hero__bg" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1500" data-aos-delay="200"></div>
             </section>
 
             <!-- Section Taxonomy -->
-            <div id="taxonomy" class="section section--taxonomy">
+            <section id="taxonomy" class="section section--taxonomy">
                 <div class="taxonomy">
-                    <div class="taxonomy__split">
+                    <div class="taxonomy__split" data-aos="fade-right" data-aos-offset="100" data-aos-duration="500" data-aos-delay="100">
                         <p class="taxon">Classe: <span>Mammalia</span></p>
                         <p class="taxon">Ordem: <span>Cetacea</span></p>
                         <p class="taxon">Familia: <span>Delphinidae</span></p>
                     </div>
-                    <div class="taxonomy__split">
+                    <div class="taxonomy__split" data-aos="fade-left" data-aos-offset="250" data-aos-duration="500" data-aos-delay="100">
                         <p class="taxon">Genero: <span>Tursiops</span></p>
                         <p class="taxon">Especie: <span>Tursiops truncatus Montagu, 1821</span></p>
                         <p class="taxon">Nome comum: <span>Roaz-corvineiro</span></p>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Section Biology -->
             <section id="biology" class="section section--biology">
-                <div style="column-gap: 4.5rem;  column-count: 2;">
+                <div style="column-gap: 4.5rem;  column-count: 2;" data-aos="fade-in" data-aos-offset="250" data-aos-duration="800" data-aos-delay="100">
                     <p>O roaz, <i>Tursiops truncatus</i> (Montagu, 1821), é um mamifero marinho cosmopolita que pertence à família Delphinidae e à ordem Cetacea. Apresenta como nomes comuns: roaz, roaz-corvineiro e golfinho-nariz-de-garrafa. É uma espécie bastante conhecida e estudada, que pode ser confundida com outras espécies de golfinhos, como o boto-preto (Sotalia fluviatilis), o golfinho-de-bico-comprido (Delphinus capensis), o golfinho-de-risso (Grampus griseus), o golfinho-corcunda-do-Atlântico (Sousa teuszii) e o golfinho-malhado (Stnella frontalis). O roaz é a espécie de golfinho mais comum em tudo o mundo em meio natural e também em cativeiro, em zoos e aquários.</p>
                     <p>A espécie apresenta uma ampla distribuição geográfica e pode ser encontrada em águas tropicais e temperadas, estando ausente nas regiões polares. A espécie T. truncatus pode ser encontrada em mares relativamente fechados, como o mar Vermelho, o mar Negro, o mar Mediterrâneo e o Golfo da Califórnia. Apesar da ampla distribuição, ao longo dos últimos anos tem-se observado o seu declínio em populações presentes no norte da Europa, no Mediterrâneo e no mar Negro. Conhecemse populações residentes em Portugal Continental, no estuário do Sado, na Escócia, na Irlanda e, mais recentemente, no Arquipélago dos Açores, na Croácia e em Itália, sendo raro encontrá-lo a norte do Reino Unido e no mar Adriático.</p>
                 </div>
@@ -73,7 +67,7 @@
 
             <!-- Section Morphology -->
             <section id="morph"  class="section section--morph">
-                <div class="morph">
+                <div class="morph" data-aos="zoom-in" data-aos-offset="150" data-aos-duration="500" data-aos-delay="300">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 669.05 231.78" style="enable-background:new 0 0 669.05 231.78;" xml:space="preserve">
                     <style type="text/css">
@@ -3539,39 +3533,67 @@
                 </div>
                 <div class="analytics">
 
-                    <div class="analytics__item" title="Comprimento">
-                        <i class="analytics__icon analytics__icon--length fa-solid fa-ruler-horizontal">
-                        </i>
+                    <div class="analytics__item" title="Comprimento" data-aos="fade-left" data-aos-offset="100" data-aos-duration="500" data-aos-delay="100">
+                        <i class="analytics__icon analytics__icon--length fa-solid fa-ruler-horizontal"></i>
+                        <span>Comprimento</span>
                         <div class="analytics__txt">
-                            <span>4 metros</span>    
+                            <span>ate 4 metros</span>    
                         </div>
                     </div>
 
-                    <div class="analytics__item" title="Peso">
+                    <div class="analytics__item" title="Peso" data-aos="fade-left" data-aos-offset="100" data-aos-duration="500" data-aos-delay="300">
                         <i class="analytics__icon analytics__icon--weight fa-solid fa-weight-hanging"></i>
+                        <span>Peso</span>
                         <div class="analytics__txt">
-                            <span>150 - 650 Kg</span>
+                            <span>ate 650 Kg</span>
                         </div>
                     </div>
 
-                    <div class="analytics__item" title="Velocidade de deslocamento">
+                    <div class="analytics__item" title="Velocidade de deslocamento" data-aos="fade-left"  data-aos-offset="100" data-aos-duration="500" data-aos-delay="500">
                         <i class="analytics__icon analytics__icon--weight fa-solid fa-gauge-simple-high"></i>
+                        <span>Velocidade</span>
                         <div class="analytics__txt">
-                            <span>11 - 35 Km/h</span>
+                            <span>ate 35 Km/h</span>
                         </div>
                     </div>
 
-                    <div class="analytics__item" title="Esperanca media de vida">
+                    <div class="analytics__item" title="Esperanca media de vida" data-aos="fade-left" data-aos-offset="100" data-aos-duration="500" data-aos-delay="700">
                         <i class="analytics__icon analytics__icon--weight fa-solid fa-cake-candles"></i>
+                        <span>Esperanca de vida</span>
                         <div class="analytics__txt">
                             <span>40 - 50 Anos</span>
                         </div>
                     </div>  
 
-                    <div class="analytics__item" title="Dieta">
+                    <div class="analytics__item" title="Dieta"  data-aos="fade-left" data-aos-offset="100" data-aos-duration="500" data-aos-delay="900">
                         <i class="analytics__icon analytics__icon--weight fa-solid fa-utensils"></i>
+                        <span>Dieta</span>
                         <div class="analytics__txt">
                             <span>Peixes, crustaceos e cefalopodes</span>
+                        </div>
+                    </div>  
+
+                    <div class="analytics__item" title="Grupos"  data-aos="fade-left" data-aos-offset="100" data-aos-duration="500" data-aos-delay="1100">
+                        <i class="analytics__icon analytics__icon--weight fa-solid fa-grip"></i>
+                        <span>Grupos</span>
+                        <div class="analytics__txt">
+                            <span>1 - 25 indiv.</span>
+                        </div>
+                    </div>  
+
+                    <div class="analytics__item" title="Profundidade de mergulho"  data-aos="fade-left" data-aos-offset="100" data-aos-duration="500" data-aos-delay="1100">
+                        <i class="analytics__icon analytics__icon--weight fa-solid fa-turn-down"></i>
+                        <span>Profundidade de mergulho</span>
+                        <div class="analytics__txt">
+                            <span>ate 500m.</span>
+                        </div>
+                    </div>  
+
+                    <div class="analytics__item" title="Tempo de mergulho"  data-aos="fade-left" data-aos-offset="100" data-aos-duration="500" data-aos-delay="1300">
+                        <i class="analytics__icon analytics__icon--weight fa-solid fa-stopwatch-20"></i>
+                        <span>Tempo de mergulho</span>
+                        <div class="analytics__txt">
+                            <span>ate 12 min.</span>
                         </div>
                     </div>  
 
@@ -3579,7 +3601,7 @@
             </section>    
 
             <section class="section section--distribution">
-                <div class="distribution">
+                <div class="distribution" data-aos="zoom-in" data-aos-offset="150" data-aos-duration="500" data-aos-delay="200">
                     <div class="map">
                         <img src="./images/map.png" alt="" srcset="" class="map__base">
                         <img src="./images/map_overlay.png" alt="" id="mapOverlay" class="map__overlay">
@@ -3591,79 +3613,64 @@
             <!-- Section Conservation -->
             <section id="conservation" class="section section--conservation">
                 <div class="inner-wrapper inner-wrapper--conservation">
-                    
+                    <div class="conservation" data-aos="zoom-in" data-aos-offset="150" data-aos-duration="500" data-aos-delay="200">
+                        <ul class="conservation__list">
+                            <li class="conservation__item">
+                                <span>Nao Avaliado</span>
+                                <span>NE</span>
+                            </li>
+                            <li class="conservation__item">
+                                <span>Nao Aplicavel</span>  
+                                <span>NA</span> 
+                            </li>
+                            <li class="conservation__item">
+                                <span>Informacao insuficiente</span>
+                                <span>DD</span>
+                            </li>
+                            <li class="conservation__item active">
+                                <span>Pouco preocupante </span>
+                                <span>LC</span>
+                            </li>
+                            <li class="conservation__item">
+                                <span>Quase ameacado</span>
+                                <span>NT</span>    
+                            </li>
+                            <li class="conservation__item">
+                                <span>Vulneravel</span>
+                                <span>VU</span>
+                            </li>
+                            <li class="conservation__item">
+                                <span>Em perigo</span>
+                                <span>EN</span>
+                            </li>
+                            <li class="conservation__item">
+                                <span>Criticamente em perigo</span>
+                                <span>CR</span>
+                            </li>
+                            <li class="conservation__item">
+                                <span>Regionalmente Extinto</span>
+                                <span>RE</span>
+                            </li>
+                        </ul>
+                        <p class="source">
+                            <span>Fonte:</span> Livro Vermelho
+                        </p>
+                    </div>
                 </div>
             </section>
 
-            <div class="accordion">
-                <h2 class="accordion__title">Conservation <span class="accordion__icon"></span></h2>
-                <div class="accordion__body">
-                    <div class="accordion__content">
-                        <div class="conservation">
-                            <ul class="conservation__list">
-                                <li class="conservation__item">
-                                    <span>Nao Avaliado</span>
-                                    <span>NE</span>
-                                </li>
-                                <li class="conservation__item">
-                                    <span>Nao Aplicavel</span>  
-                                    <span>NA</span> 
-                                </li>
-                                <li class="conservation__item">
-                                    <span>Informacao insuficiente</span>
-                                    <span>DD</span>
-                                </li>
-                                <li class="conservation__item active">
-                                    <span>Pouco preocupante </span>
-                                    <span>LC</span>
-                                </li>
-                                <li class="conservation__item">
-                                    <span>Quase ameacado</span>
-                                    <span>NT</span>    
-                                </li>
-                                <li class="conservation__item">
-                                    <span>Vulneravel</span>
-                                    <span>VU</span>
-                                </li>
-                                <li class="conservation__item">
-                                    <span>Em perigo</span>
-                                    <span>EN</span>
-                                </li>
-                                <li class="conservation__item">
-                                    <span>Criticamente em perigo</span>
-                                    <span>CR</span>
-                                </li>
-                                <li class="conservation__item">
-                                    <span>Regionalmente Extinto</span>
-                                    <span>RE</span>
-                                </li>
-                            </ul>
-                            <p class="source">
-                                <span>Fonte:</span> Livro Vermelho
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="accordion__title">Bibliografia <span class="accordion__icon"></span></h2>
-                <div class="accordion__body">
-                    <div class="accordion__content">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis incidunt, distinctio, cumque esse quisquam aut assumenda nostrum aliquid amet autem id at placeat maiores totam vel minima. Porro, tempora rem.
-                        Explicabo quis eligendi odit excepturi. Ullam expedita animi natus! Provident exercitationem, aperiam excepturi error, laudantium quod amet, eius consequuntur delectus aut odit iste voluptatibus! Inventore facilis ipsum ea nam fugiat.
-                    </div>
-                </div>
-                <h2 class="accordion__title">Links <span class="accordion__icon"></span></h2>
-                <div class="accordion__body">
-                    <div class="accordion__content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus officia quasi minima magnam. Sapiente illo consequuntur aut corporis, asperiores ad tenetur est, veritatis officia omnis nisi temporibus magnam voluptatibus excepturi.
-                        Vitae ex atque quos voluptatibus dolorem nulla rem et aliquid distinctio, deleniti inventore doloremque quas, impedit expedita voluptate ea voluptas incidunt! Aut nam commodi cum, maiores eius aliquid ipsum alias!
-                        Blanditiis, odit accusantium? Est dolorem eligendi architecto libero sequi quis doloremque laborum totam sint ducimus, vitae, odio sit saepe, eveniet sapiente incidunt fugiat optio esse numquam maiores? Itaque, vitae pariatur.
+            <div class="section section--bibliography">
+                <div class="inner-wrapper">
+                    <div class="bibliography" data-aos="zoom-in" data-aos-offset="150" data-aos-duration="500" data-aos-delay="200">
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis incidunt, distinctio, cumque esse quisquam aut assumenda nostrum aliquid amet autem id at placeat maiores totam vel minima. Porro, tempora rem.</p>
+                        <p>Explicabo quis eligendi odit excepturi. Ullam expedita animi natus! Provident exercitationem, aperiam excepturi error, laudantium quod amet, eius consequuntur delectus aut odit iste voluptatibus! Inventore facilis ipsum ea nam fugiat.</p>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="inner-wrapper">
             <p class="footer__rights">ROAZ &copy; 2021 - Developed with <span>&hearts;</span> by <a href="https://pedromartins.com.pt" class="footer__link">Pedro Martins</a></p>
@@ -3674,6 +3681,7 @@
     <a href="#" id="scrollTop" class="scrollTop fa-solid fa-chevron-up"></a>
 
     <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
